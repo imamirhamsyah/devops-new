@@ -5,7 +5,7 @@
         name: python-docker
         state: present
       when:
-        - ansible_distribution == "centOS"
+        - ansible_distribution == "CentOS"
     - name: install python-docker
       yum:
         name: "{{ item }}"
